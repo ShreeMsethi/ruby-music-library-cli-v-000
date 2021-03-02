@@ -91,9 +91,9 @@ class MusicLibraryController
     answer = ""
     puts "Which song number would you like to play?"
     answer = gets.chomp
-      Song.all.find do |song|
+      song_to_play = Song.all.find do |song|
         if song == answer
-          puts "playing #{song}"
+          puts song_to_play
         end
       end  
   end
