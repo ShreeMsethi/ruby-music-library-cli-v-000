@@ -91,7 +91,8 @@ class MusicLibraryController
     answer = ""
     puts "Which song number would you like to play?"
     answer = gets.chomp
-    if  Song.all.include?(answer)
+    if  Song.all.find{|input
+    }(answer)
       puts "playing #{answer}"
     end
   end
