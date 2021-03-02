@@ -92,7 +92,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     answer = gets.chomp
     if  list_songs.include?(answer)
-      
+      puts "play"
     end
   end
   
