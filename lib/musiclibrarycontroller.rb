@@ -93,11 +93,11 @@ class MusicLibraryController
     answer = gets.chomp
     
     
-      song_to_play = Song.all.find do |song|
-        if song == answer
-          puts song_to_play
-        end
-      end 
+      # song_to_play = Song.all.find do |song|
+      #   if song == answer
+      #     puts song_to_play
+      #   end
+      # end 
       
       
   end
