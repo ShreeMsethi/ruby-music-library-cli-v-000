@@ -91,7 +91,7 @@ class MusicLibraryController
     answer = ""
     puts "Which song number would you like to play?"
     answer = gets.chomp.to_i
-    binding.pry
+    # binding.pry
       if answer > 0 && answer < Song.all.length
         
       end
