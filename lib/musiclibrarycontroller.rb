@@ -93,6 +93,7 @@ class MusicLibraryController
     answer = gets.chomp.to_i
     # binding.pry
       if answer > 0 && answer < Song.all.length
+        # if answer.between?(0, Song.all.length) - Different syntax
         array = Song.all.sort{|a, b| a.name <=> b.name}
         song = array[answer - 1]
         puts "Playing #{song.name} by #{song.artist.name}"
