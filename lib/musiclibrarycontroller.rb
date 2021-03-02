@@ -91,11 +91,10 @@ class MusicLibraryController
     answer = ""
     puts "Which song number would you like to play?"
     answer = gets.chomp.to_i
-      if answer > 0 && answer < Song.all.length
-        array = Song.all.sort{|a,b| a.name <=> b.name}
-        song = array[answer - 1]
-        puts "Playing #{song.name} by #{song.artist.name}"
-      end
+    binding.pry
+      if answer > 0 
+        
+      
   end
   
 end
