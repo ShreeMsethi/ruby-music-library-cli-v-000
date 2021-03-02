@@ -92,7 +92,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     answer = gets.chomp.to_i
     binding.pry
-      if answer > 0 
+      if answer > 0 && answer < Song.all.length
         
       
   end
